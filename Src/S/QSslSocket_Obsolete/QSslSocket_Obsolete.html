@@ -1,0 +1,221 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>QSslSocket_Obsolete - Qt中文文档</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../../../favicon.svg">
+        <link rel="shortcut icon" href="../../../favicon.png">
+        <link rel="stylesheet" href="../../../css/variables.css">
+        <link rel="stylesheet" href="../../../css/general.css">
+        <link rel="stylesheet" href="../../../css/chrome.css">
+        <link rel="stylesheet" href="../../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../../highlight.css">
+        <link rel="stylesheet" href="../../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = null;
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../../../BookInfo.html"><strong aria-hidden="true">1.</strong> 简介</a></li><li><ol class="section"><li class="chapter-item expanded "><div><strong aria-hidden="true">1.1.</strong> A</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../Src/A/QAbstractAnimation/QAbstractAnimation.html"><strong aria-hidden="true">1.1.1.</strong> QAbstractAnimation</a></li><li class="chapter-item expanded "><a href="../../../Src/A/QAbstractAudioDeviceInfo/QAbstractAudioDeviceInfo.html"><strong aria-hidden="true">1.1.2.</strong> QAbstractAudioDeviceInfo</a></li><li class="chapter-item expanded "><a href="../../../Src/A/QAbstractAudioInput/QAbstractAudioInput.html"><strong aria-hidden="true">1.1.3.</strong> QAbstractAudioInput</a></li><li class="chapter-item expanded "><a href="../../../Src/A/QAbstractAudioOutput/QAbstractAudioOutput.html"><strong aria-hidden="true">1.1.4.</strong> QAbstractAudioOutput</a></li><li class="chapter-item expanded "><a href="../../../Src/A/QAbstractAxis/QAbstractAxis.html"><strong aria-hidden="true">1.1.5.</strong> QAbstractAxis</a></li><li class="chapter-item expanded "><a href="../../../Src/A/QAbstractBarSeries/QAbstractBarSeries.html"><strong aria-hidden="true">1.1.6.</strong> QAbstractBarSeries</a></li><li class="chapter-item expanded "><a href="../../../Src/A/QAbstractItemModel/QAbstractItemModel.html"><strong aria-hidden="true">1.1.7.</strong> QAbstractItemModel</a></li><li class="chapter-item expanded "><a href="../../../Src/A/QAbstractSocket/QAbstractSocket.html"><strong aria-hidden="true">1.1.8.</strong> QAbstractSocket</a></li><li class="chapter-item expanded "><a href="../../../Src/A/QAction/QAction.html"><strong aria-hidden="true">1.1.9.</strong> QAction</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.2.</strong> B</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../Src/B/Best_Practice_Guides/Best_Practice_Guides.html"><strong aria-hidden="true">1.2.1.</strong> Best_Practice_Guides</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.3.</strong> C</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../Src/C/Container_Classes/Container_Classes.html"><strong aria-hidden="true">1.3.1.</strong> Container_Classes</a></li><li class="chapter-item expanded "><a href="../../../Src/C/QCheckBox/QCheckBox.html"><strong aria-hidden="true">1.3.2.</strong> QCheckBox</a></li><li class="chapter-item expanded "><a href="../../../Src/C/QComboBox/QComboBox.html"><strong aria-hidden="true">1.3.3.</strong> QComboBox</a></li><li class="chapter-item expanded "><a href="../../../Src/C/QCoreApplication/QCoreApplication.html"><strong aria-hidden="true">1.3.4.</strong> QCoreApplication</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.4.</strong> D</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../Src/D/QDate/QDate.html"><strong aria-hidden="true">1.4.1.</strong> QDate</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.5.</strong> F</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../Src/F/QFile/QFile.html"><strong aria-hidden="true">1.5.1.</strong> QFile</a></li><li class="chapter-item expanded "><a href="../../../Src/F/QFileInfo/QFileInfo.html"><strong aria-hidden="true">1.5.2.</strong> QFileInfo</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.6.</strong> G</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../Src/G/QGenericArgument/QGenericArgument.html"><strong aria-hidden="true">1.6.1.</strong> QGenericArgument</a></li><li class="chapter-item expanded "><a href="../../../Src/G/QGenericReturnArgument/QGenericReturnArgument.html"><strong aria-hidden="true">1.6.2.</strong> QGenericReturnArgument</a></li><li class="chapter-item expanded "><a href="../../../Src/G/QtGlobal/QtGlobal.html"><strong aria-hidden="true">1.6.3.</strong> QtGlobal</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.7.</strong> I</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../Src/I/QIODevice/QIODevice.html"><strong aria-hidden="true">1.7.1.</strong> QIODevice</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.8.</strong> J</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../Src/J/QJsonArray/QJsonArray.html"><strong aria-hidden="true">1.8.1.</strong> QJsonArray</a></li><li class="chapter-item expanded "><a href="../../../Src/J/QJsonDocument/QJsonDocument.html"><strong aria-hidden="true">1.8.2.</strong> QJsonDocument</a></li><li class="chapter-item expanded "><a href="../../../Src/J/QJsonObject/QJsonObject.html"><strong aria-hidden="true">1.8.3.</strong> QJsonObject</a></li><li class="chapter-item expanded "><a href="../../../Src/J/QJsonParseError/QJsonParseError.html"><strong aria-hidden="true">1.8.4.</strong> QJsonParseError</a></li><li class="chapter-item expanded "><a href="../../../Src/J/QJsonValue/QJsonValue.html"><strong aria-hidden="true">1.8.5.</strong> QJsonValue</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.9.</strong> L</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../Src/L/QLabel/QLabel.html"><strong aria-hidden="true">1.9.1.</strong> QLabel</a></li><li class="chapter-item expanded "><a href="../../../Src/L/QLibrary/QLibrary.html"><strong aria-hidden="true">1.9.2.</strong> QLibrary</a></li><li class="chapter-item expanded "><a href="../../../Src/L/QList/QList.html"><strong aria-hidden="true">1.9.3.</strong> QList</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.10.</strong> M</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../Src/M/Model_View_Programming/Model_View_Programming.html"><strong aria-hidden="true">1.10.1.</strong> Model_View_Programming</a></li><li class="chapter-item expanded "><a href="../../../Src/M/Model_View_Tutorial/Model_View_Tutorial.html"><strong aria-hidden="true">1.10.2.</strong> Model_View_Tutorial</a></li><li class="chapter-item expanded "><a href="../../../Src/M/Multithreading_Technologies_in_Qt/Multithreading_Technologies_in_Qt.html"><strong aria-hidden="true">1.10.3.</strong> Multithreading_Technologies_in_Qt</a></li><li class="chapter-item expanded "><a href="../../../Src/M/QMainWindow/QMainWindow.html"><strong aria-hidden="true">1.10.4.</strong> QMainWindow</a></li><li class="chapter-item expanded "><a href="../../../Src/M/QMetaClassInfo/QMetaClassInfo.html"><strong aria-hidden="true">1.10.5.</strong> QMetaClassInfo</a></li><li class="chapter-item expanded "><a href="../../../Src/M/QMetaMethod/QMetaMethod.html"><strong aria-hidden="true">1.10.6.</strong> QMetaMethod</a></li><li class="chapter-item expanded "><a href="../../../Src/M/QMetaObject/QMetaObject.html"><strong aria-hidden="true">1.10.7.</strong> QMetaObject</a></li><li class="chapter-item expanded "><a href="../../../Src/M/QMetaProperty/QMetaProperty.html"><strong aria-hidden="true">1.10.8.</strong> QMetaProperty</a></li><li class="chapter-item expanded "><a href="../../../Src/M/QMetaType/QMetaType.html"><strong aria-hidden="true">1.10.9.</strong> QMetaType</a></li><li class="chapter-item expanded "><a href="../../../Src/M/QMutex/QMutex.html"><strong aria-hidden="true">1.10.10.</strong> QMutex</a></li><li class="chapter-item expanded "><a href="../../../Src/M/QMutexLocker/QMutexLocker.html"><strong aria-hidden="true">1.10.11.</strong> QMutexLocker</a></li><li class="chapter-item expanded "><a href="../../../Src/M/The_Meta-Object_System/The_Meta-Object_System.html"><strong aria-hidden="true">1.10.12.</strong> The_Meta-Object_System</a></li><li class="chapter-item expanded "><a href="../../../Src/M/Using_the_Meta-Object_Compiler_moc/Using_the_Meta-Object_Compiler_moc.html"><strong aria-hidden="true">1.10.13.</strong> Using_the_Meta-Object_Compiler_moc</a></li><li class="chapter-item expanded "><a href="../../../Src/M/Why_Does_Qt_Use_Moc_for_Signals_and_Slots/Why_Does_Qt_Use_Moc_for_Signals_and_Slots.html"><strong aria-hidden="true">1.10.14.</strong> Why_Does_Qt_Use_Moc_for_Signals_and_Slots</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.11.</strong> O</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../Src/O/QObject/QObject.html"><strong aria-hidden="true">1.11.1.</strong> QObject</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.12.</strong> P</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../Src/P/QPaintDevice/QPaintDevice.html"><strong aria-hidden="true">1.12.1.</strong> QPaintDevice</a></li><li class="chapter-item expanded "><a href="../../../Src/P/QPaintEngine/QPaintEngine.html"><strong aria-hidden="true">1.12.2.</strong> QPaintEngine</a></li><li class="chapter-item expanded "><a href="../../../Src/P/QPainter/QPainter.html"><strong aria-hidden="true">1.12.3.</strong> QPainter</a></li><li class="chapter-item expanded "><a href="../../../Src/P/QPluginLoader/QPluginLoader.html"><strong aria-hidden="true">1.12.4.</strong> QPluginLoader</a></li><li class="chapter-item expanded "><a href="../../../Src/P/QtPlugin/QtPlugin.html"><strong aria-hidden="true">1.12.5.</strong> QtPlugin</a></li><li class="chapter-item expanded "><a href="../../../Src/P/The_Property_System/The_Property_System.html"><strong aria-hidden="true">1.12.6.</strong> The_Property_System</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.13.</strong> Q</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../Src/Q/Qt_Namespace/Qt_Namespace.html"><strong aria-hidden="true">1.13.1.</strong> Qt_Namespace</a></li><li class="chapter-item expanded "><a href="../../../Src/Q/Qt_Overviews/Qt_Overviews.html"><strong aria-hidden="true">1.13.2.</strong> Qt_Overviews</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.14.</strong> R</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../Src/R/QReadLocker/QReadLocker.html"><strong aria-hidden="true">1.14.1.</strong> QReadLocker</a></li><li class="chapter-item expanded "><a href="../../../Src/R/QReadWriteLock/QReadWriteLock.html"><strong aria-hidden="true">1.14.2.</strong> QReadWriteLock</a></li><li class="chapter-item expanded "><a href="../../../Src/R/QRecursiveMutex/QRecursiveMutex.html"><strong aria-hidden="true">1.14.3.</strong> QRecursiveMutex</a></li><li class="chapter-item expanded "><a href="../../../Src/R/Reentrancy_and_Thread-Safety/Reentrancy_and_Thread-Safety.html"><strong aria-hidden="true">1.14.4.</strong> Reentrancy_and_Thread-Safety</a></li><li class="chapter-item expanded "><a href="../../../Src/R/Resource_Compiler_rcc/Resource_Compiler_rcc.html"><strong aria-hidden="true">1.14.5.</strong> Resource_Compiler_rcc</a></li><li class="chapter-item expanded "><a href="../../../Src/R/The_Qt_Resource_System/The_Qt_Resource_System.html"><strong aria-hidden="true">1.14.6.</strong> The_Qt_Resource_System</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.15.</strong> S</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../Src/S/QSctpServer/QSctpServer.html"><strong aria-hidden="true">1.15.1.</strong> QSctpServer</a></li><li class="chapter-item expanded "><a href="../../../Src/S/QSctpSocket/QSctpSocket.html"><strong aria-hidden="true">1.15.2.</strong> QSctpSocket</a></li><li class="chapter-item expanded "><a href="../../../Src/S/QSemaphore/QSemaphore.html"><strong aria-hidden="true">1.15.3.</strong> QSemaphore</a></li><li class="chapter-item expanded "><a href="../../../Src/S/QSql/QSql.html"><strong aria-hidden="true">1.15.4.</strong> QSql</a></li><li class="chapter-item expanded "><a href="../../../Src/S/QSqlDatabase/QSqlDatabase.html"><strong aria-hidden="true">1.15.5.</strong> QSqlDatabase</a></li><li class="chapter-item expanded "><a href="../../../Src/S/QSsl/QSsl.html"><strong aria-hidden="true">1.15.6.</strong> QSsl</a></li><li class="chapter-item expanded "><a href="../../../Src/S/QSslCertificate/QSslCertificate.html"><strong aria-hidden="true">1.15.7.</strong> QSslCertificate</a></li><li class="chapter-item expanded "><a href="../../../Src/S/QSslCertificate_Obsolete/QSslCertificate_Obsolete.html"><strong aria-hidden="true">1.15.8.</strong> QSslCertificate_Obsolete</a></li><li class="chapter-item expanded "><a href="../../../Src/S/QSslCertificateExtension/QSslCertificateExtension.html"><strong aria-hidden="true">1.15.9.</strong> QSslCertificateExtension</a></li><li class="chapter-item expanded "><a href="../../../Src/S/QSslCipher/QSslCipher.html"><strong aria-hidden="true">1.15.10.</strong> QSslCipher</a></li><li class="chapter-item expanded "><a href="../../../Src/S/QSslConfiguration/QSslConfiguration.html"><strong aria-hidden="true">1.15.11.</strong> QSslConfiguration</a></li><li class="chapter-item expanded "><a href="../../../Src/S/QSslError/QSslError.html"><strong aria-hidden="true">1.15.12.</strong> QSslError</a></li><li class="chapter-item expanded "><a href="../../../Src/S/QSslKey/QSslKey.html"><strong aria-hidden="true">1.15.13.</strong> QSslKey</a></li><li class="chapter-item expanded "><a href="../../../Src/S/QSslSocket/QSslSocket.html"><strong aria-hidden="true">1.15.14.</strong> QSslSocket</a></li><li class="chapter-item expanded "><a href="../../../Src/S/QSslSocket_Obsolete/QSslSocket_Obsolete.html" class="active"><strong aria-hidden="true">1.15.15.</strong> QSslSocket_Obsolete</a></li><li class="chapter-item expanded "><a href="../../../Src/S/QStyledItemDelegate/QStyledItemDelegate.html"><strong aria-hidden="true">1.15.16.</strong> QStyledItemDelegate</a></li><li class="chapter-item expanded "><a href="../../../Src/S/Signals_and_Slots/Signals_and_Slots.html"><strong aria-hidden="true">1.15.17.</strong> Signals_and_Slots</a></li><li class="chapter-item expanded "><a href="../../../Src/S/Synchronizing_Threads/Synchronizing_Threads.html"><strong aria-hidden="true">1.15.18.</strong> Synchronizing_Threads</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.16.</strong> T</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../Src/T/QTcpServer/QTcpServer.html"><strong aria-hidden="true">1.16.1.</strong> QTcpServer</a></li><li class="chapter-item expanded "><a href="../../../Src/T/QTcpSocket/QTcpSocket.html"><strong aria-hidden="true">1.16.2.</strong> QTcpSocket</a></li><li class="chapter-item expanded "><a href="../../../Src/T/QTimer/QTimer.html"><strong aria-hidden="true">1.16.3.</strong> QTimer</a></li><li class="chapter-item expanded "><a href="../../../Src/T/QTransform/QTransform.html"><strong aria-hidden="true">1.16.4.</strong> QTransform</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.17.</strong> U</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../Src/U/QUdpSocket/QUdpSocket.html"><strong aria-hidden="true">1.17.1.</strong> QUdpSocket</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.18.</strong> V</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../Src/V/QVariant/QVariant.html"><strong aria-hidden="true">1.18.1.</strong> QVariant</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.19.</strong> W</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../Src/W/QWebEngineHistory/QWebEngineHistory.html"><strong aria-hidden="true">1.19.1.</strong> QWebEngineHistory</a></li><li class="chapter-item expanded "><a href="../../../Src/W/QWebEngineHistoryItem/QWebEngineHistoryItem.html"><strong aria-hidden="true">1.19.2.</strong> QWebEngineHistoryItem</a></li><li class="chapter-item expanded "><a href="../../../Src/W/QWebEngineView/QWebEngineView.html"><strong aria-hidden="true">1.19.3.</strong> QWebEngineView</a></li><li class="chapter-item expanded "><a href="../../../Src/W/QWriteLocker/QWriteLocker.html"><strong aria-hidden="true">1.19.4.</strong> QWriteLocker</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">1.20.</strong> X</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../Src/X/QX11Info/QX11Info.html"><strong aria-hidden="true">1.20.1.</strong> QX11Info</a></li></ol></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Qt中文文档</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="qsslsocket_obsolete"><a class="header" href="#qsslsocket_obsolete">QSslSocket_Obsolete</a></h1>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../../Src/S/QSslSocket/QSslSocket.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../../../Src/S/QStyledItemDelegate/QStyledItemDelegate.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../../Src/S/QSslSocket/QSslSocket.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../../../Src/S/QStyledItemDelegate/QStyledItemDelegate.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../../elasticlunr.min.js"></script>
+        <script src="../../../mark.min.js"></script>
+        <script src="../../../searcher.js"></script>
+
+        <script src="../../../clipboard.min.js"></script>
+        <script src="../../../highlight.js"></script>
+        <script src="../../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
